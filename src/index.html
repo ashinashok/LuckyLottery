@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lottery Game</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div id="game-layout">
+      <div id="rules-box">
+        <h2>Game Rules</h2>
+        <ul>
+          <li>The player selects 6 individual numbers from 1–59.</li>
+          <li>6 Balls are drawn randomly from the 59.</li>
+          <li>Prizes:
+            <ul>
+              <li>3 = $50</li>
+              <li>4 = $100</li>
+              <li>5 = $200</li>
+              <li>6 = $500</li>
+            </ul>
+          </li>
+          <li><strong>Manual Pick</strong>: Click to select up to 6 balls.</li>
+          <li><strong>Lucky Dip</strong>: Auto-pick 6 random numbers.</li>
+          <li><strong>Start Game</strong>: Draws winning numbers.</li>
+          <li>Color Legend:
+            <ul>
+              <li><span class="legend-ball blue"></span> Selected</li>
+              <li><span class="legend-ball orange"></span> Winning</li>
+              <li><span class="legend-ball green"></span> Winning + Selected</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div id="game-center">
+        <div id="game-container">
+          <h1 class="title">Pick Your Numbers</h1>
+        </div>
+        <div class="controls">
+          <button id="luckyDip">Lucky Dip</button>
+          <button id="startGame">Start</button>
+          <button id="restartGame">Restart</button>
+        </div>
+      </div>
+
+      <div id="result-area">
+        <h3>Winning Numbers</h3>
+        <div id="winningNumbers" class="result-row"></div>
+
+        <h3>Selected Numbers</h3>
+        <div id="selectedNumbers" class="result-row"></div>
+
+        <div id="result"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+
+</html>
